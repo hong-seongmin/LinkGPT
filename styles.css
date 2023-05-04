@@ -30,10 +30,27 @@ body {
 
 .buttons a {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100px;
   height: 100px;
+  text-decoration: none;
+}
+
+.button-label {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  word-wrap: break-word;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .button-label {
+    font-size: 12px;
+  }
 }
 
 .buttons img {
